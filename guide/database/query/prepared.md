@@ -52,9 +52,9 @@ The only difference between `param()` and `bind()` is that `bind()` passes the v
 
 If you want to display the SQL that will be executed, simply cast the object to a string:
 
-    echo Kohana::debug((string) $query);
+    echo Debug::vars((string) $query);
     // Should display:
-    // SELECT * FROM users WHERE username = 'john'
+    // string(43) "SELECT * FROM users WHERE username = 'john'"
 
 ## Executing
 
